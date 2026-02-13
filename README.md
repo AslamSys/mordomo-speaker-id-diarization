@@ -2,7 +2,7 @@
 
 ## 🔗 Navegação
 
-**[🏠 AslamSys](https://github.com/AslamSys)** → **[📚 _system](https://github.com/AslamSys/_system)** → **[📂 Aslam (Orange Pi 5 16GB)](https://github.com/AslamSys/_system/blob/main/hardware/aslam/README.md)** → **mordomo-speaker-id-diarization**
+**[🏠 AslamSys](https://github.com/AslamSys)** → **[📚 _system](https://github.com/AslamSys/_system)** → **[📂 Aslam (Orange Pi 5 16GB)](https://github.com/AslamSys/_system/blob/main/hardware/mordomo%20-%20(orange-pi-5-16gb)/README.md)** → **mordomo-speaker-id-diarization**
 
 ### Containers Relacionados (aslam)
 - [mordomo-audio-bridge](https://github.com/AslamSys/mordomo-audio-bridge)
@@ -36,7 +36,7 @@
 
 ## 🔗 Navegação
 
-**[🏠 AslamSys](https://github.com/AslamSys)** → **[📚 _system](https://github.com/AslamSys/_system)** → **[📂 Aslam (Orange Pi 5 16GB)](https://github.com/AslamSys/_system/blob/main/hardware/aslam/README.md)** → **mordomo-speaker-id-diarization**
+**[🏠 AslamSys](https://github.com/AslamSys)** → **[📚 _system](https://github.com/AslamSys/_system)** → **[📂 Aslam (Orange Pi 5 16GB)](https://github.com/AslamSys/_system/blob/main/hardware/mordomo%20-%20(orange-pi-5-16gb)/README.md)** → **mordomo-speaker-id-diarization**
 
 ### Containers Relacionados (aslam)
 - [mordomo-audio-bridge](https://github.com/AslamSys/mordomo-audio-bridge)
@@ -67,7 +67,7 @@ pip install -r requirements.txt
 
 ## 🔗 Navegação
 
-**[🏠 AslamSys](https://github.com/AslamSys)** → **[📚 _system](https://github.com/AslamSys/_system)** → **[📂 Aslam (Orange Pi 5 16GB)](https://github.com/AslamSys/_system/blob/main/hardware/aslam/README.md)** → **mordomo-speaker-id-diarization**
+**[🏠 AslamSys](https://github.com/AslamSys)** → **[📚 _system](https://github.com/AslamSys/_system)** → **[📂 Aslam (Orange Pi 5 16GB)](https://github.com/AslamSys/_system/blob/main/hardware/mordomo%20-%20(orange-pi-5-16gb)/README.md)** → **mordomo-speaker-id-diarization**
 
 ### Containers Relacionados (aslam)
 - [mordomo-audio-bridge](https://github.com/AslamSys/mordomo-audio-bridge)
@@ -93,7 +93,7 @@ python test_data/create_embedding.py user_1
 
 ## 🔗 Navegação
 
-**[🏠 AslamSys](https://github.com/AslamSys)** → **[📚 _system](https://github.com/AslamSys/_system)** → **[📂 Aslam (Orange Pi 5 16GB)](https://github.com/AslamSys/_system/blob/main/hardware/aslam/README.md)** → **mordomo-speaker-id-diarization**
+**[🏠 AslamSys](https://github.com/AslamSys)** → **[📚 _system](https://github.com/AslamSys/_system)** → **[📂 Aslam (Orange Pi 5 16GB)](https://github.com/AslamSys/_system/blob/main/hardware/mordomo%20-%20(orange-pi-5-16gb)/README.md)** → **mordomo-speaker-id-diarization**
 
 ### Containers Relacionados (aslam)
 - [mordomo-audio-bridge](https://github.com/AslamSys/mordomo-audio-bridge)
@@ -123,7 +123,7 @@ python test_data/create_embedding.py user_2
 
 ## 🔗 Navegação
 
-**[🏠 AslamSys](https://github.com/AslamSys)** → **[📚 _system](https://github.com/AslamSys/_system)** → **[📂 Aslam (Orange Pi 5 16GB)](https://github.com/AslamSys/_system/blob/main/hardware/aslam/README.md)** → **mordomo-speaker-id-diarization**
+**[🏠 AslamSys](https://github.com/AslamSys)** → **[📚 _system](https://github.com/AslamSys/_system)** → **[📂 Aslam (Orange Pi 5 16GB)](https://github.com/AslamSys/_system/blob/main/hardware/mordomo%20-%20(orange-pi-5-16gb)/README.md)** → **mordomo-speaker-id-diarization**
 
 ### Containers Relacionados (aslam)
 - [mordomo-audio-bridge](https://github.com/AslamSys/mordomo-audio-bridge)
@@ -234,7 +234,7 @@ IDLE (limpa contexto, pronto para próxima)
 
 ## 🔗 Navegação
 
-**[🏠 AslamSys](https://github.com/AslamSys)** → **[📚 _system](https://github.com/AslamSys/_system)** → **[📂 Aslam (Orange Pi 5 16GB)](https://github.com/AslamSys/_system/blob/main/hardware/aslam/README.md)** → **mordomo-speaker-id-diarization**
+**[🏠 AslamSys](https://github.com/AslamSys)** → **[📚 _system](https://github.com/AslamSys/_system)** → **[📂 Aslam (Orange Pi 5 16GB)](https://github.com/AslamSys/_system/blob/main/hardware/mordomo%20-%20(orange-pi-5-16gb)/README.md)** → **mordomo-speaker-id-diarization**
 
 ### Containers Relacionados (aslam)
 - [mordomo-audio-bridge](https://github.com/AslamSys/mordomo-audio-bridge)
@@ -336,7 +336,7 @@ message DiarizeRequest {
 
 ## 🔗 Navegação
 
-**[🏠 AslamSys](https://github.com/AslamSys)** → **[📚 _system](https://github.com/AslamSys/_system)** → **[📂 Aslam (Orange Pi 5 16GB)](https://github.com/AslamSys/_system/blob/main/hardware/aslam/README.md)** → **mordomo-speaker-id-diarization**
+**[🏠 AslamSys](https://github.com/AslamSys)** → **[📚 _system](https://github.com/AslamSys/_system)** → **[📂 Aslam (Orange Pi 5 16GB)](https://github.com/AslamSys/_system/blob/main/hardware/mordomo%20-%20(orange-pi-5-16gb)/README.md)** → **mordomo-speaker-id-diarization**
 
 ### Containers Relacionados (aslam)
 - [mordomo-audio-bridge](https://github.com/AslamSys/mordomo-audio-bridge)
@@ -373,7 +373,7 @@ payload: {
 
 ## 🔗 Navegação
 
-**[🏠 AslamSys](https://github.com/AslamSys)** → **[📚 _system](https://github.com/AslamSys/_system)** → **[📂 Aslam (Orange Pi 5 16GB)](https://github.com/AslamSys/_system/blob/main/hardware/aslam/README.md)** → **mordomo-speaker-id-diarization**
+**[🏠 AslamSys](https://github.com/AslamSys)** → **[📚 _system](https://github.com/AslamSys/_system)** → **[📂 Aslam (Orange Pi 5 16GB)](https://github.com/AslamSys/_system/blob/main/hardware/mordomo%20-%20(orange-pi-5-16gb)/README.md)** → **mordomo-speaker-id-diarization**
 
 ### Containers Relacionados (aslam)
 - [mordomo-audio-bridge](https://github.com/AslamSys/mordomo-audio-bridge)
@@ -410,7 +410,7 @@ payload: {
 
 ## 🔗 Navegação
 
-**[🏠 AslamSys](https://github.com/AslamSys)** → **[📚 _system](https://github.com/AslamSys/_system)** → **[📂 Aslam (Orange Pi 5 16GB)](https://github.com/AslamSys/_system/blob/main/hardware/aslam/README.md)** → **mordomo-speaker-id-diarization**
+**[🏠 AslamSys](https://github.com/AslamSys)** → **[📚 _system](https://github.com/AslamSys/_system)** → **[📂 Aslam (Orange Pi 5 16GB)](https://github.com/AslamSys/_system/blob/main/hardware/mordomo%20-%20(orange-pi-5-16gb)/README.md)** → **mordomo-speaker-id-diarization**
 
 ### Containers Relacionados (aslam)
 - [mordomo-audio-bridge](https://github.com/AslamSys/mordomo-audio-bridge)
@@ -434,7 +434,7 @@ payload: {
 
 ## 🔗 Navegação
 
-**[🏠 AslamSys](https://github.com/AslamSys)** → **[📚 _system](https://github.com/AslamSys/_system)** → **[📂 Aslam (Orange Pi 5 16GB)](https://github.com/AslamSys/_system/blob/main/hardware/aslam/README.md)** → **mordomo-speaker-id-diarization**
+**[🏠 AslamSys](https://github.com/AslamSys)** → **[📚 _system](https://github.com/AslamSys/_system)** → **[📂 Aslam (Orange Pi 5 16GB)](https://github.com/AslamSys/_system/blob/main/hardware/mordomo%20-%20(orange-pi-5-16gb)/README.md)** → **mordomo-speaker-id-diarization**
 
 ### Containers Relacionados (aslam)
 - [mordomo-audio-bridge](https://github.com/AslamSys/mordomo-audio-bridge)
@@ -458,7 +458,7 @@ payload: {
 
 ## 🔗 Navegação
 
-**[🏠 AslamSys](https://github.com/AslamSys)** → **[📚 _system](https://github.com/AslamSys/_system)** → **[📂 Aslam (Orange Pi 5 16GB)](https://github.com/AslamSys/_system/blob/main/hardware/aslam/README.md)** → **mordomo-speaker-id-diarization**
+**[🏠 AslamSys](https://github.com/AslamSys)** → **[📚 _system](https://github.com/AslamSys/_system)** → **[📂 Aslam (Orange Pi 5 16GB)](https://github.com/AslamSys/_system/blob/main/hardware/mordomo%20-%20(orange-pi-5-16gb)/README.md)** → **mordomo-speaker-id-diarization**
 
 ### Containers Relacionados (aslam)
 - [mordomo-audio-bridge](https://github.com/AslamSys/mordomo-audio-bridge)
@@ -482,7 +482,7 @@ payload: {
 
 ## 🔗 Navegação
 
-**[🏠 AslamSys](https://github.com/AslamSys)** → **[📚 _system](https://github.com/AslamSys/_system)** → **[📂 Aslam (Orange Pi 5 16GB)](https://github.com/AslamSys/_system/blob/main/hardware/aslam/README.md)** → **mordomo-speaker-id-diarization**
+**[🏠 AslamSys](https://github.com/AslamSys)** → **[📚 _system](https://github.com/AslamSys/_system)** → **[📂 Aslam (Orange Pi 5 16GB)](https://github.com/AslamSys/_system/blob/main/hardware/mordomo%20-%20(orange-pi-5-16gb)/README.md)** → **mordomo-speaker-id-diarization**
 
 ### Containers Relacionados (aslam)
 - [mordomo-audio-bridge](https://github.com/AslamSys/mordomo-audio-bridge)
@@ -506,7 +506,7 @@ payload: {
 
 ## 🔗 Navegação
 
-**[🏠 AslamSys](https://github.com/AslamSys)** → **[📚 _system](https://github.com/AslamSys/_system)** → **[📂 Aslam (Orange Pi 5 16GB)](https://github.com/AslamSys/_system/blob/main/hardware/aslam/README.md)** → **mordomo-speaker-id-diarization**
+**[🏠 AslamSys](https://github.com/AslamSys)** → **[📚 _system](https://github.com/AslamSys/_system)** → **[📂 Aslam (Orange Pi 5 16GB)](https://github.com/AslamSys/_system/blob/main/hardware/mordomo%20-%20(orange-pi-5-16gb)/README.md)** → **mordomo-speaker-id-diarization**
 
 ### Containers Relacionados (aslam)
 - [mordomo-audio-bridge](https://github.com/AslamSys/mordomo-audio-bridge)
@@ -530,7 +530,7 @@ payload: {
 
 ## 🔗 Navegação
 
-**[🏠 AslamSys](https://github.com/AslamSys)** → **[📚 _system](https://github.com/AslamSys/_system)** → **[📂 Aslam (Orange Pi 5 16GB)](https://github.com/AslamSys/_system/blob/main/hardware/aslam/README.md)** → **mordomo-speaker-id-diarization**
+**[🏠 AslamSys](https://github.com/AslamSys)** → **[📚 _system](https://github.com/AslamSys/_system)** → **[📂 Aslam (Orange Pi 5 16GB)](https://github.com/AslamSys/_system/blob/main/hardware/mordomo%20-%20(orange-pi-5-16gb)/README.md)** → **mordomo-speaker-id-diarization**
 
 ### Containers Relacionados (aslam)
 - [mordomo-audio-bridge](https://github.com/AslamSys/mordomo-audio-bridge)
@@ -654,7 +654,7 @@ class SpeakerIdentifier:
 
 ## 🔗 Navegação
 
-**[🏠 AslamSys](https://github.com/AslamSys)** → **[📚 _system](https://github.com/AslamSys/_system)** → **[📂 Aslam (Orange Pi 5 16GB)](https://github.com/AslamSys/_system/blob/main/hardware/aslam/README.md)** → **mordomo-speaker-id-diarization**
+**[🏠 AslamSys](https://github.com/AslamSys)** → **[📚 _system](https://github.com/AslamSys/_system)** → **[📂 Aslam (Orange Pi 5 16GB)](https://github.com/AslamSys/_system/blob/main/hardware/mordomo%20-%20(orange-pi-5-16gb)/README.md)** → **mordomo-speaker-id-diarization**
 
 ### Containers Relacionados (aslam)
 - [mordomo-audio-bridge](https://github.com/AslamSys/mordomo-audio-bridge)
@@ -682,7 +682,7 @@ Output: [
 
 ## 🔗 Navegação
 
-**[🏠 AslamSys](https://github.com/AslamSys)** → **[📚 _system](https://github.com/AslamSys/_system)** → **[📂 Aslam (Orange Pi 5 16GB)](https://github.com/AslamSys/_system/blob/main/hardware/aslam/README.md)** → **mordomo-speaker-id-diarization**
+**[🏠 AslamSys](https://github.com/AslamSys)** → **[📚 _system](https://github.com/AslamSys/_system)** → **[📂 Aslam (Orange Pi 5 16GB)](https://github.com/AslamSys/_system/blob/main/hardware/mordomo%20-%20(orange-pi-5-16gb)/README.md)** → **mordomo-speaker-id-diarization**
 
 ### Containers Relacionados (aslam)
 - [mordomo-audio-bridge](https://github.com/AslamSys/mordomo-audio-bridge)
@@ -707,7 +707,7 @@ Output: [
 
 ## 🔗 Navegação
 
-**[🏠 AslamSys](https://github.com/AslamSys)** → **[📚 _system](https://github.com/AslamSys/_system)** → **[📂 Aslam (Orange Pi 5 16GB)](https://github.com/AslamSys/_system/blob/main/hardware/aslam/README.md)** → **mordomo-speaker-id-diarization**
+**[🏠 AslamSys](https://github.com/AslamSys)** → **[📚 _system](https://github.com/AslamSys/_system)** → **[📂 Aslam (Orange Pi 5 16GB)](https://github.com/AslamSys/_system/blob/main/hardware/mordomo%20-%20(orange-pi-5-16gb)/README.md)** → **mordomo-speaker-id-diarization**
 
 ### Containers Relacionados (aslam)
 - [mordomo-audio-bridge](https://github.com/AslamSys/mordomo-audio-bridge)
@@ -735,7 +735,7 @@ Output: [
 
 ## 🔗 Navegação
 
-**[🏠 AslamSys](https://github.com/AslamSys)** → **[📚 _system](https://github.com/AslamSys/_system)** → **[📂 Aslam (Orange Pi 5 16GB)](https://github.com/AslamSys/_system/blob/main/hardware/aslam/README.md)** → **mordomo-speaker-id-diarization**
+**[🏠 AslamSys](https://github.com/AslamSys)** → **[📚 _system](https://github.com/AslamSys/_system)** → **[📂 Aslam (Orange Pi 5 16GB)](https://github.com/AslamSys/_system/blob/main/hardware/mordomo%20-%20(orange-pi-5-16gb)/README.md)** → **mordomo-speaker-id-diarization**
 
 ### Containers Relacionados (aslam)
 - [mordomo-audio-bridge](https://github.com/AslamSys/mordomo-audio-bridge)
