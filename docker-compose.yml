@@ -1,0 +1,23 @@
+services:
+  speaker-id-diarization:
+    build: .
+    image: aslamsys/mordomo-speaker-id-diarization:latest
+    container_name: speaker-id-diarization
+    restart: unless-stopped
+    environment:
+      - NATS_URL=nats://nats:4222
+      - ZMQ_VAD_URL=tcp://audio-capture-vad:5555
+      - EMBEDDINGS_PATH=/data/embeddings
+      - RECOGNITION_THRESHOLD=0.70
+      - SEGMENT_DURATION_S=2.0
+    volumes:
+      - ../data/embeddings:/data/embeddings:ro
+    networks:
+      - mordomo
+    depends_on:
+      - nats
+      - audio-capture-vad
+
+networks:
+  mordomo:
+    external: true
