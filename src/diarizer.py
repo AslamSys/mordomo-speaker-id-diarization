@@ -1,15 +1,13 @@
 """
 Speaker diarization + identification engine.
-Uses SpeechBrain ECAPA-TDNN for speaker embeddings (ARM64 compatible, no HF auth).
+Uses ECAPA-TDNN via ONNX Runtime for speaker embeddings (ARM64 compatible, lightweight).
 Accumulates audio frames, extracts embeddings, identifies speakers, detects overlap.
 """
 import logging
 import time
 
 import numpy as np
-import torch
-import torchaudio
-from speechbrain.inference.speaker import EncoderClassifier
+import onnxruntime as ort
 
 from src.config import config
 from src.embeddings import EmbeddingStore, cosine_similarity
@@ -20,33 +18,39 @@ logger = logging.getLogger("diarizer")
 class SpeakerDiarizer:
     def __init__(self, store: EmbeddingStore):
         self.store = store
-        self._model: EncoderClassifier | None = None
+        self._session: ort.InferenceSession | None = None
         self._prev_speaker_id: str | None = None
 
     def load_model(self):
-        logger.info(f"Loading embedding model: {config.embedding_model}")
-        self._model = EncoderClassifier.from_hparams(
-            source=config.embedding_model,
-            savedir="/tmp/speechbrain_cache",
-            run_opts={"device": "cpu"},
+        model_path = config.onnx_model_path
+        logger.info(f"Loading ONNX embedding model: {model_path}")
+        self._session = ort.InferenceSession(
+            model_path,
+            providers=["CPUExecutionProvider"],
         )
-        logger.info("Embedding model loaded")
+        logger.info("ONNX embedding model loaded")
 
     def extract_embedding(self, pcm_bytes: bytes) -> np.ndarray:
         """Extract speaker embedding from raw PCM int16 audio."""
         samples = np.frombuffer(pcm_bytes, dtype=np.int16).astype(np.float32) / 32768.0
-        waveform = torch.tensor(samples).unsqueeze(0)  # (1, T)
+        waveform = samples.reshape(1, -1)  # (1, T)
 
         # Resample if needed (model expects 16kHz)
         if config.sample_rate != 16000:
-            waveform = torchaudio.functional.resample(
-                waveform, config.sample_rate, 16000
-            )
+            # Simple linear interpolation resampling
+            ratio = 16000 / config.sample_rate
+            n_out = int(samples.shape[0] * ratio)
+            indices = np.linspace(0, samples.shape[0] - 1, n_out)
+            resampled = np.interp(indices, np.arange(samples.shape[0]), samples)
+            waveform = resampled.reshape(1, -1)
 
-        with torch.no_grad():
-            embedding = self._model.encode_batch(waveform)
+        input_names = [inp.name for inp in self._session.get_inputs()]
+        feed = {input_names[0]: waveform.astype(np.float32)}
+        if len(input_names) > 1:
+            feed[input_names[1]] = np.array([1.0], dtype=np.float32)
 
-        return embedding.squeeze().numpy()
+        outputs = self._session.run(None, feed)
+        return outputs[0].squeeze()
 
     def identify_segment(
         self, pcm_bytes: bytes, timestamp: float, conversation_id: str
@@ -92,7 +96,6 @@ class SpeakerDiarizer:
         If they differ significantly, overlap is likely.
         Returns (overlap_detected, [embedding_a, embedding_b] or None).
         """
-        samples_count = len(pcm_bytes) // 2  # int16
         min_samples = int(config.min_overlap_duration_s * config.sample_rate) * 2
         if len(pcm_bytes) < min_samples * 2:
             return False, None

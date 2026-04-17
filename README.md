@@ -187,26 +187,21 @@ IDLE (limpa contexto, pronto para próxima)
 
 **Linguagem:** Python (obrigatório - ecossistema ML)
 
-**Principal:** pyannote.audio (Híbrido: Diarization + Recognition)
-- Diarization state-of-the-art
-- Speaker embeddings (256D)
-- Overlap detection
-- **Recognition:** Compara com embeddings cadastrados
-- **Backend:** PyTorch (C++ libtorch nativo)
+**Principal:** ECAPA-TDNN via ONNX Runtime
+- Speaker embeddings (192D, ECAPA-TDNN exportado de SpeechBrain)
+- Overlap detection (comparação de embeddings entre metades do segmento)
+- **Recognition:** Compara com embeddings cadastrados via cosine similarity
+- **Backend:** ONNX Runtime CPU (modelo exportado via multi-stage Docker build)
+- **Dockerfile:** Multi-stage — Stage 1 exporta PyTorch→ONNX, Stage 2 runtime leve (~2GB menor)
 
-**Modelo:** `pyannote/speaker-diarization-3.1` + embeddings
+**Modelo:** `ecapa_tdnn.onnx` (exportado de `speechbrain/spkrec-ecapa-voxceleb`)
 
 **Database Compartilhado:**
 - Usa MESMOS embeddings do Speaker Verification
 - Embeddings cadastrados: `/data/embeddings/user_1.npy`, `/data/embeddings/user_2.npy`
 - Threshold: 0.70 (mais permissivo que Verification)
 
-**Alternativas:**
-- Resemblyzer (mesma tech do Verification)
-- SpeechBrain Speaker Recognition (PyTorch)
-- Custom model (TensorFlow Lite)
-
-**Performance:** Diarization model em PyTorch C++, embedding comparison em NumPy C (OpenBLAS). Python overhead ~10ms.
+**Performance:** Inferência ONNX em C++, embedding comparison em NumPy C (OpenBLAS). Python overhead ~10ms.
 
 ---
 

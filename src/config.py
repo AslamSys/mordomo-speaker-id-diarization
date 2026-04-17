@@ -20,6 +20,11 @@ class Config:
         "EMBEDDING_MODEL", "speechbrain/spkrec-ecapa-voxceleb"
     )
 
+    # ONNX model path (exported ECAPA-TDNN)
+    onnx_model_path: str = os.getenv(
+        "ONNX_MODEL_PATH", "/app/model/ecapa_tdnn.onnx"
+    )
+
     # Diarization
     max_speakers: int = int(os.getenv("MAX_SPEAKERS", "3"))
     min_segment_ms: int = int(os.getenv("MIN_SEGMENT_MS", "1000"))
