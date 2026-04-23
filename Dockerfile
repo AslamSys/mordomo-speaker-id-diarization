@@ -1,5 +1,5 @@
 # ── Stage 1: Export ECAPA-TDNN to ONNX ──────────────────────────────────
-FROM python:3.12-slim AS exporter
+FROM python:3.11-slim AS exporter
 
 RUN apt-get update && apt-get install -y --no-install-recommends gcc g++ \
     && rm -rf /var/lib/apt/lists/*
